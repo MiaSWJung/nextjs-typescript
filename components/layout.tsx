@@ -3,15 +3,22 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import {ReactElement, ReactNode} from "react";
 
-const name = 'Your Name'
+const name = 'Mia Jung'
 export const siteTitle = 'Next.js Sample Website'
 
-export default function Layout({ children, home }) {
+type Props = {
+  children? : ReactElement[]
+  home? : boolean
+}
+
+export default function Layout({ children, home } : Props) {
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/public/favicon.ico" />
+        <title>Title</title>
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"

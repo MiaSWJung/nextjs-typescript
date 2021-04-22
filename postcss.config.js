@@ -1,8 +1,8 @@
 module.exports = {
   purge: [
-    // TODO : Use *.tsx if using TypeScript
-    './pages/**/*.js',
-    './components/**/*.js'
+    './pages/**/*.tsx',
+    './components/**/*.tsx'
+    // Use *.tsx if using TypeScript || Use *.js if using JS
   ],
   plugins: [
     'tailwindcss',
